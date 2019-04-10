@@ -3,7 +3,7 @@ html,body {
   padding: 1em 2em;
   font-size: 14px;
   background: #222;
-  color: #aaa
+  color: #e3baf8
 }
 
 h1,h2 {
@@ -12,6 +12,6 @@ h1,h2 {
 }
 h1 { font-size: 3.5em; }
 h2 {
-  color: #888;
+  color: #e3baf8;
   font-size: 2em;
 }

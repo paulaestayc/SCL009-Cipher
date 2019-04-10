@@ -2,7 +2,7 @@
 
 # Resumen del proyecto
 
-Secreto entre amigas!
+Secret!!
 
 Con esta aplicación, puedes mantener los secretos entre tus amigas a salvo  y compartir mensajes codificados sin el temor de que alguien más pueda verlos. 
 
@@ -42,7 +42,11 @@ La interfaz permite al usuario introducir un mensaje de texto , elegir la cantid
 Se mantuvo el formato original de los primeros sketches , como en la siguiente foto
 
 Flujo 
-![FlujoCipher](C:\Users\Pau\Desktop\clonando\SCL009-Cipher\src\imagenes\FlujoCipher.jpg)
+![FlujoCipher](imagenes/FlujoCipher.jpg)
+![Prototipo1](imagenes/Prototipo1.jpg)
+![Prototipo2](imagenes/Prototipo2.jpg)
+![Interfaz](imagenes/interfaz.jpg)
+
 
 To Do
 Capturar texto
