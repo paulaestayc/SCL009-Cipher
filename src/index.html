@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html>
   <head>
     <meta charset="utf-8">
@@ -12,49 +12,47 @@
     <title>&#9829; Caesar Cipher &#9829;</title>
 
     <link rel="stylesheet" href="style.css" />
+	
+	  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+
 
   </head>
   <body>
+  
+  
+  
+	<div class="container">
+		<h1>Secret! Encripta y Desencripta tus mensajes</h1>
+		<hr />
+		<div class="row">
+			<div class="col-md-8">
+				<div class="form-group">
+					<label for="texto"><h2>Ingresar Mensaje:</h2></label>
+				<textarea  id="textcifrar" placeholder="Ingresar Texto" cols="45" rows="3" class="form-control" style="color:#ad16c6"></textarea><br/><br/>
+				</div>
+				<input id="btncifrar" type="button" value="CIFRAR" onclick="encode();" class="btn btn-primary"/>
+					<input id="btndescifrar" type="button" value="DESCIFRAR" onclick="decode(); " class="btn btn-primary"/><br/><br/>
+			</div>
+			<div class="col-md-4">
+				<div class="form-group">
+					<label for="desplazamiento"><h2>N° Desplazamiento:</h2></label>
+					<input id="textnumero" type="number" min=0 Max=99 placeholder="Desplazamiento" class="form-control" style="color:#ad16c6" /><br/><br/>
+					</div>
+			</div>
+			<div class="col-md-8">
+				<div class="form-group">
+					<label for="cifrado"><h2>Tu mensaje es:</h2></label>
+					<textarea id="textresultado" type="text" placeholder="Resultado" readonly="true" cols="45" rows="3" class="form-control" style="color:#ad16c6" ></textarea><br/>
+				</div>
+			</div>	
+		</div>
+		<input id="btnLimpiar" type="button" value="BORRAR" onclick="limpiar();" class="btn btn-danger" /> 			
+	</div>
+  
 
-
-<div id="root">
- <h1>BBF Secret! </h1>
-
- <!--preguntar? onkeyup evento q se gatilla cada vez que haya ese evento, q se tecleen en ese campo,
-  onkeup= hazlo sobre esto, y arriba en la función / diferencia entre onkeyup y onclick cada vez q tecllen, on click, cad a vez q hagan click, onkeypress se mantiene pulsada un tecla  ... onkeyup="mayus(this);"--> 
-
-   <h4>Ingresa el mensaje que quieres cifrar/descifrar:</h4>
-
-  <textarea  id="textcifrar" placeholder="Ingresar Texto" cols="45" rows="3" class="redondeado" style="color:#ad16c6"></textarea><br/><br/>
-
-  <h4>Ingresar N° Desplazamiento:</h4>
-
-<!--<form>
-<div class="form-group">
-<label for="formControlRange">Example Range input</label> 
-<input type="range" class="form-control-range" id="formControlRange" id="TextNumero" min=0 max=99 />
-</div>
-</form>-->
-
-<input id="textnumero" type="number" min="0" max="99" class="redondeado" /><br/><br/>
-
-<input id="btncifrar" type="button" value="Cifrar" onclick="encode();" class="btn btn-info"/>
-
-<input id="btndescifrar" type="button" value="Descifrar" onclick="decode(); " class="btn btn-info"/><br/><br/>
-
-<h4>Tu mensaje es:</h4>
-
-<!--no está funcionando inputstyle ..... --->
-
-<textarea id="textresultado" type="text" placeholder="Resultado" readonly="true" cols="45" rows="3" class="redondeado" style="color:#ad16c6" ></textarea><br/><br/>
-
-<input id="btnLimpiar" type="button" value="Limpiar" onclick="limpiar();" class="btn btn-info" />      
-
-</div>
 
 <script src="cipher.js"></script>
 <script src="index.js"></script>
-
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

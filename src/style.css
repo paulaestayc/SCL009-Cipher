@@ -1,20 +1,17 @@
-/* Acá va tu código */
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
-
-body {
-	text-align: center;
-	background-image: url('https://i-h1.pinimg.com/564x/f8/87/a5/f887a54bef93c6da0c066b6b644bce61.jpg');
-	background: 100% x 100%;
-		/*background-image: url('https://i-h1.pinimg.com/564x/0a/36/ac/0a36ac10ed449445c621613a2a02ae0d.jpg');*/
-	color: #faf4fd ;
-	text-shadow: 1px 1 0 #808080, -1px 0 0 #808080, 0 1px 0 #808080, 0 -1px 0 #808080, 1px 1px #808080, -1px -1px 0 #808080, 1px -1px 0 #808080 -1px 1px 0 #808080;
-	font-family: 'Tangerine', cursive;
-
-
+html,body {
+  font-family: 'Raleway', sans-serif;
+  padding: 1em 2em;
+  font-size: 14px;
+  background: #222;
+  color: #aaa
 }
 
-.redondeado {
-   border-radius: 5px;
- }
-
- .inputstyle {font-family: gotham; font-size: 12pt; color: #ad16c6"}
+h1,h2 {
+  font-weight: 100;
+  margin: 0.4em 0;
+}
+h1 { font-size: 3.5em; }
+h2 {
+  color: #888;
+  font-size: 2em;
+}
