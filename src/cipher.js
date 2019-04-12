@@ -3,29 +3,32 @@ window.cipher = {
 
     let textoCifradoFinal = "";
 
-    for (let i = 0; i < textoIngresado.length; i ++) {
+    for (let i = 0; i <= textoIngresado.length; i ++) {
 
-            let texto = textoIngresado[i]; // almacenamos el indice obtenido en nuestro ciclo for
+            /*let texto = textoIngresado[i]; // almacenamos el indice obtenido en nuestro ciclo for
 
             /*expresión regular va a buscar dentro de una cadena las coincidencias , 
-            permite el rango especificado , en este caso las ñ*/
-            if (texto.match(/[a-z]/i)) {
+            permite el rango especificado , en este caso las ñ
+            if (texto.match(/[a-z]/i)) {*/
 
                 let valorUnicode = textoIngresado.charCodeAt(i);
 
-                if ((valorUnicode >= 65) && (valorUnicode <= 90)){
+                if ((valorUnicode >= 32) && (valorUnicode <= 125)){
 
-                    texto = String.fromCharCode(((valorUnicode - 65 + numero) % 26) + 65);
+                    textoCifradoFinal += String.fromCharCode(((valorUnicode - 32 + numero) % 94) + 32);
 
-                }
+             
+               
 
-            }
+            /*}
             //+ suma tu resultado a la variable , como un tipo de concatenación 
-            textoCifradoFinal += texto;
+            textoCifradoFinal += texto;*/
 
         }
-            return textoCifradoFinal;
-        }, 
+        
+    }
+    return textoCifradoFinal;
+    }, 
 
 
 
@@ -35,28 +38,23 @@ window.cipher = {
 
         let textoDescifradoFinal = "";
 
-        for (let i = 0; i < textoIngresado.length; i ++) {
+        for (let i = 0; i <= textoIngresado.length; i ++) {
 
-            let texto = textoIngresado[i];
-
-            if (texto.match(/[a-z]/i)) {
-
+            
                 let valorUnicode = textoIngresado.charCodeAt(i);
 
-                if ((valorUnicode >= 65) && (valorUnicode <= 90)){
+                if ((valorUnicode >= 32) && (valorUnicode <= 125)){
 
-                    texto = String.fromCharCode(((valorUnicode + 65 - numero) % 26) + 65);
+                    textoDescifradoFinal += String.fromCharCode(((valorUnicode -125 - numero) % 94) + 125);
 
-                }
-
-            }
-
-            textoDescifradoFinal += texto;
+                } 
 
         }
-        return textoDescifradoFinal ; 
+        return textoDescifradoFinal 
+       } 
 
-    } 
+};
+    
 
 
-}
+//solo borrA UNA MAS
